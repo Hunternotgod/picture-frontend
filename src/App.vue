@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import BasicLayout from '@/layout/BasicLayout.vue'
 import { healthUsingGet } from '@/api/mainController.ts'
-import { useLoginUserStore } from '@/stores/useLoginUserStore.ts'
-
-// 获取登陆用户信息
-const loginUserStore = useLoginUserStore()
-loginUserStore.fetchLoginUser()
-
+// import { useLoginUserStore } from '@/stores/useLoginUserStore.ts'
+//
+// 获取登陆用户信息 (现已改为在权限校验文件中获取)
+// const loginUserStore = useLoginUserStore()
+// loginUserStore.fetchLoginUser()
+//
 healthUsingGet().then((res) => {
   console.log(res)
 })
