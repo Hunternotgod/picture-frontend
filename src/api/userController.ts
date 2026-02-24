@@ -53,7 +53,7 @@ export async function getUserVoByIdUsingGet(body: number, options?: { [key: stri
   })
 }
 
-/** listUserVoByPage POST /api/user/list/page/vo */
+/** 用户信息分页查询 POST /api/user/list/page/vo */
 export async function listUserVoByPageUsingPost(
   body: API.UserQueryRequest,
   options?: { [key: string]: any }

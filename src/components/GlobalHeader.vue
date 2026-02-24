@@ -5,7 +5,7 @@
         <router-link to="/">
           <div class="title-bar">
             <img class="logo" src="../assets/logo.jpeg" alt="logo" />
-            <div class="title">云图库</div>
+            <div class="title">小猪云图库</div>
           </div>
         </router-link>
       </a-col>
@@ -66,6 +66,16 @@ const originItems = [
     key: '/admin/userManage',
     label: '用户管理',
     title: '用户管理',
+  },
+  {
+    key: '/admin/pictureManage',
+    label: '图片管理',
+    title: '图片管理',
+  },
+  {
+    key: '/add_picture',
+    label: '创建图片',
+    title: '创建图片',
   },
   {
     key: 'others',
