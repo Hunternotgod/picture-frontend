@@ -17,8 +17,10 @@ import GlobalHeader from '@/components/GlobalHeader.vue'
         </a>
       </a-layout-footer>
     </a-layout>
+
   </div>
 </template>
+
 
 <style scoped>
 #basicLayout .header {
@@ -43,4 +45,5 @@ import GlobalHeader from '@/components/GlobalHeader.vue'
   right: 0;
   text-align: center;
 }
+
 </style>

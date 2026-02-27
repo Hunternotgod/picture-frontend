@@ -78,9 +78,14 @@ const originItems = [
     title: '创建图片',
   },
   {
-    key: 'others',
-    label: h('a', { href: 'https://gitee.com/fat-cat-barbecue', target: '_blank' }, '肥猫叉烧'),
-    title: '肥猫叉烧',
+    key: '/gitee',
+    label: h('a', { href: 'https://gitee.com/fat-cat-barbecue', target: '_blank' }, 'gitee'),
+    title: 'gitee',
+  },
+  {
+    key: '/github',
+    label: h('a', { href: 'https://github.com/Hunternotgod', target: '_blank' }, 'github'),
+    title: 'github',
   },
 ]
 
