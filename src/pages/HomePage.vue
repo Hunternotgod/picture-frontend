@@ -15,7 +15,7 @@
       <a-tab-pane key="all" tab="全部" />
       <a-tab-pane v-for="category in categoryList" :key="category" :tab="category" />
     </a-tabs>
-    <div class="tag-bar" style="margin-bottom: 20px">
+    <div class="tag-bar" style="margin-bottom: 20pxR">
       <span style="margin-right: 8px">标签：</span>
       <a-space :size="[0, 8]" wrap>
         <a-checkable-tag
