@@ -8,6 +8,7 @@ import PictureManagePage from '@/pages/admin/PictureManagePage.vue'
 import PictureDetailPage from '@/pages/PictureDetailPage.vue'
 import GiteePage from '@/pages/GiteePage.vue'
 import GithubPage from '@/pages/GithubPage.vue'
+import AddPictureBatchPage from '@/pages/AddPictureBatchPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,6 +58,11 @@ const router = createRouter({
       path: '/github',
       name: 'github',
       component: GithubPage,
+    },
+    {
+      path: '/add_picture/batch',
+      name: '批量创建图片',
+      component: AddPictureBatchPage,
     },
   ],
 })
