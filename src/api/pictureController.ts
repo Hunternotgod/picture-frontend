@@ -92,6 +92,51 @@ export async function listPictureVoByPageUsingPost(
   })
 }
 
+/** 分页获取图片列表（封装类）带缓存 POST /api/picture/list/page/Vo/cache */
+export async function listPictureVoByPageWithCacheUsingPost(
+  body: API.PictureQueryRequest,
+  options?: { [key: string]: any }
+) {
+  return request<API.BaseResponsePagePictureVo_>('/api/picture/list/page/Vo/cache', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** 分页获取图片列表（封装类）带多级缓存 POST /api/picture/list/page/Vo/cacheAndLocal */
+export async function listPictureVoByPageWithCacheAndLocalUsingPost(
+  body: API.PictureQueryRequest,
+  options?: { [key: string]: any }
+) {
+  return request<API.BaseResponsePagePictureVo_>('/api/picture/list/page/Vo/cacheAndLocal', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** 分页获取图片列表（封装类）带本地缓存 POST /api/picture/list/page/Vo/localCache */
+export async function listPictureVoByPageWithLocalCacheUsingPost(
+  body: API.PictureQueryRequest,
+  options?: { [key: string]: any }
+) {
+  return request<API.BaseResponsePagePictureVo_>('/api/picture/list/page/Vo/localCache', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
 /** 图片审核 POST /api/picture/review */
 export async function doPictureReviewUsingPost(
   // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
@@ -171,7 +216,7 @@ export async function uploadPictureUsingPost(
   })
 }
 
-/** 批量抓取和创建图片 POST /api/picture/upload/batch */
+/** 批量抓取和创建图片（仅管理员可用） POST /api/picture/upload/batch */
 export async function uploadPictureByBatchUsingPost(
   // 叠加生成的Param类型 (非body参数swagger默认没有生成对象)
   params: API.uploadPictureByBatchUsingPOSTParams,
