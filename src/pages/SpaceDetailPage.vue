@@ -44,7 +44,7 @@ const props = defineProps<{
 }>()
 const space = ref<API.SpaceVo>({})
 
-// 获取空间详情
+// 获取空间详情。
 const fetchSpaceDetail = async () => {
   try {
     const res = await getSpaceVoByIdUsingGet({
